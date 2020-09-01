@@ -6,7 +6,7 @@ const temperature = document.querySelector('#temperature')
 const address = document.querySelector('#location')
 const weather = document.querySelector('#weather')
 
-getWeather =(location)=>{fetch(`http://localhost:3000/weather?address=${location}`).then((response)=>{
+getWeather =(location)=>{fetch(`/weather?address=${location}`).then((response)=>{
     // if(error){
     //     console.log(error)
     //     message1.textContent=error.error
